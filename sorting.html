@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>sorting</title>
+</head>
+
+<body>
+    <script>
+        var arr = [8, 7, 1, 5, 4, 2, 3, 1, 0, 1];
+        var x;
+        var y;
+        var min;
+        var max;
+        var crt = [];
+
+
+        function ilaya() {
+            x = arr[0];
+            y = arr[1];
+            if (x > y) {
+                min = y;
+                max = x;
+
+            } else {
+                min = x;
+            }
+            for (var i = 0; i < arr.length; i++) {
+                if (min >= arr[i]) {
+                    min = arr[i];
+                    var d = i
+
+                }
+            }
+            crt.push(arr[d]);
+            arr.splice(d, 1);
+            console.log(crt);
+        }
+        ilaya();
+        ilaya();
+        ilaya();
+        ilaya();
+        ilaya();
+        ilaya();
+        ilaya();
+        ilaya();
+        ilaya();
+        ilaya();
+    </script>
+
+</body>
+
+</html>
